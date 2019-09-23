@@ -1,0 +1,40 @@
+.dropdown {
+  min-width: 180px; }
+  .dropdown-toggle#dropdown-basic {
+    min-width: 180px;
+    text-align: left;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    color: black;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+    border-radius: 20px; }
+    .dropdown-toggle#dropdown-basic::after {
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      padding: 3px;
+      transform: rotate(-135deg);
+      vertical-align: 0%;
+      margin-left: 55%; }
+  .dropdown div.dropdown-menu {
+    border-radius: 0 0 20px 20px;
+    margin: 0;
+    border: none; }
+  .dropdown a.dropdown-item {
+    min-width: 180px; }
+
+div.dropdown.show {
+  position: initial; }
+  div.dropdown.show .dropdown-toggle#dropdown-basic {
+    border-radius: 20px 20px 0 0; }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  .dropdown-menu,
+  #dropdown-basic {
+    margin: 0;
+    width: 96%; }
+    .dropdown-menu::after,
+    #dropdown-basic::after {
+      margin-left: 75%; } }

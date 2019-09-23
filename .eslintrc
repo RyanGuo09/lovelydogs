@@ -1,0 +1,59 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["react", "jsx-a11y", "prettier"],
+  "rules": {
+    "indent": [1, 2, { "SwitchCase": 1 }],
+    "linebreak-style": 0,
+    "no-underscore-dangle": 0,
+    "react/forbid-prop-types": 0,
+    "no-nested-ternary": 0,
+    "react/prefer-stateless-function": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-filename-extension": 0,
+    "comma-dangle": 0,
+    "semi": 1,
+    "import/newline-after-import": 0,
+    "no-useless-constructor": 1,
+    "react/prop-types": 1,
+    "radix": 0,
+    "no-trailing-spaces": 1,
+    "react/self-closing-comp": 1,
+    "max-len": 0,
+    "no-confusing-arrow": "off",
+    "space-before-function-paren": [1, { "anonymous": "always", "named": "never" }],
+    "keyword-spacing": 0,
+    "brace-style": 1,
+    "no-else-return": 0,
+    "react/require-default-props": 0,
+    "react/jsx-indent": [1, 2],
+    "react/jsx-indent-props": [1, 2],
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "function-paren-newline": 0,
+    "no-param-reassign": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to", "hrefLeft", "hrefRight"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "tabWidth": 2
+      }
+    ],
+    "arrow-parens": ["error", "as-needed"],
+    "object-curly-newline": 0,
+    "no-mixed-operators": 0
+  }
+}

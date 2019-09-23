@@ -1,0 +1,96 @@
+.navBar {
+  overflow: hidden;
+  background: #041e42;
+  clear: both;
+  padding: 20px;
+  /* If you want the navigation bar to stick on top
+  position: sticky;
+  top: 0;
+  */
+  /* Hide Hamburger */
+  /* Logo */
+  /* Menu Items */ }
+  .navBar__hambuerger-wrapper, .navBar__hamburger,
+  .navBar #hamburger {
+    display: none; }
+  .navBar__logo {
+    width: 120px;
+    height: 35px;
+    margin-left: 30px; }
+  .navBar__cart {
+    width: 35px;
+    height: 30px;
+    float: right; }
+  .navBar .badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    float: right; }
+  .navBar .label-warning[href],
+  .navBar .badge-warning[href] {
+    background-color: #ffc220; }
+  .navBar #wmCartCount {
+    font-size: 12px;
+    background: #ffc220;
+    color: #041e42;
+    padding: 2px 5px;
+    vertical-align: top;
+    margin-top: -10px; }
+  .navBar__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right; }
+    .navBar__links li {
+      display: inline-block;
+      padding: 10px;
+      box-sizing: border-box; }
+      .navBar__links li a {
+        color: #f6f6f6;
+        text-decoration: none;
+        padding-left: 25px;
+        padding-right: 25px; }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  .navBar {
+    /* Show Hamburger */
+    /* Logo */
+    /* Toggle show/hide menu on checkbox click */
+    /* Break down menu items into vertical */ }
+    .navBar__hamburger {
+      display: inline-block;
+      font-style: normal;
+      font-size: 1.2em; }
+    .navBar__hambuerger-wrapper {
+      padding: 20px;
+      display: none; }
+    .navBar__logo {
+      display: inline-block;
+      width: 120px;
+      height: 35px;
+      margin-left: 20%;
+      text-align: center; }
+    .navBar input:checked ~ .navBar__links {
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #041e42;
+      overflow-x: hidden;
+      transition: 0.5s; }
+      .navBar input:checked ~ .navBar__links .navBar__hambuerger-wrapper {
+        display: block; }
+    .navBar__links {
+      display: none;
+      width: 0; }
+      .navBar__links li {
+        display: block;
+        text-align: center;
+        padding: 15px;
+        font-size: 12px; } }
